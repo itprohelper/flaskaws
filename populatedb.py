@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 from database_setup import Category, Base, Item, User
 
-engine = create_engine('mysql+pymysql://mbpdbuser:Macron2020!@mbpdb.cs31k7t8tcwk.us-east-2.rds.amazonaws.com:3306/mbpdb')
+engine = create_engine('mysql+pymysql://<user>:<password>@<yourDB_hostservername>:3306/<yourDB>')
 
 Base.metadata.bind = engine
 
