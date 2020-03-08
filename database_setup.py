@@ -66,7 +66,7 @@ Base.metadata.create_all(engine)
 
 
 
-#SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://mbpdbuser:Macron2020!@mbpdb.cs31k7t8tcwk.us-east-2.rds.amazonaws.com:3306/mbpdb'
+#SQLALCHEMY_DATABASE_URI = ('mysql+pymysql://<user>:<password>@<yourDB_hostservername>:3306/<yourDB>')
 
 # Uncomment the line below if you want to work with a local DB
 #SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
