@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+{% block content %}
+
+	<div class="row top-menu">
+		<div class="col-md-10">
+			<h1>Catalog App</h1>
+			
+		</div>
+		<div class="col-md-2 text-right">
+		hola category
+		</div>
+	</div>
+
+
+
+{% for category in category %}
+
+<h3>Category name: {{category.name}}</h3>
+
+{% endfor %}
+
+<h3>Items in Category</h3>
+{% for item in item %}
+<ul>{{item.name}}</ul>
+
+{% endfor %}
+
+{% endblock %}
